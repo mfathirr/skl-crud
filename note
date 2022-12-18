@@ -1,0 +1,35 @@
+<!-- modal hapus -->
+                        <div class="modal fade" id="edit<?= $item["id"] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Data Barang Anda?</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    <form action="" method="POST"> 
+                                        <!-- <div class="mb-3">
+                                            <label for="gambar" class="form-label">Gambar Barang</label>
+                                            <input type="file" class="form-control" id="gambar" value="<?= $item["gambar"] ?>">
+                                        </div> -->
+                                        <div class="mb-3">
+                                            <label for="nama" class="form-label">Harga Barang</label>
+                                            <input type="text" name="nama" class="form-control" id="nama" value="<?= $item["nama"] ?>">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="desk" class="form-label">Harga Barang</label>
+                                            <input type="text" name="desk" class="form-control" id="desk" value="<?= $item["deskripsi"] ?>">
+                                        </div>
+                                    </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <form action="" method="post">
+                                            <input type="hidden" name="id" value="<?= $item["id"] ?>">
+                                            <button type="submit" class="btn btn-primary" name="ubahBarang">Ubah Barang</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- modal hapus end -->
